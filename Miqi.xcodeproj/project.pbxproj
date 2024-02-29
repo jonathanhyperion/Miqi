@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		140DF2AC27F61E02005151EC /* Application+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DF2AB27F61E02005151EC /* Application+URL.swift */; };
+		140DF2AD27F61E02005151EC /* Application+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DF2AB27F61E02005151EC /* Application+URL.swift */; };
+		1415D83227F86515008A4060 /* GaugeProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1415D83127F86515008A4060 /* GaugeProgressViewStyle.swift */; };
+		143137C327EF1CFE00F1E75D /* MiqiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143137C227EF1CFE00F1E75D /* MiqiApp.swift */; };
+		143137C527EF1CFE00F1E75D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143137C427EF1CFE00F1E75D /* ContentView.swift */; };
+		143137C727EF1CFF00F1E75D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143137C627EF1CFF00F1E75D /* Assets.xcassets */; };
+		143137CA27EF1CFF00F1E75D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143137C927EF1CFF00F1E75D /* Preview Assets.xcassets */; };
+		143137F327EF321D00F1E75D /* StatsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143137F227EF321D00F1E75D /* StatsStorage.swift */; };
+		143137FB27EF350500F1E75D /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143137FA27EF350500F1E75D /* Intents.framework */; };
+		143137FE27EF350500F1E75D /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143137FD27EF350500F1E75D /* IntentHandler.swift */; };
+		1431381327EF350500F1E75D /* MiqiShortcutIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 143137F827EF350500F1E75D /* MiqiShortcutIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1431381D27EF5E3200F1E75D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1431381C27EF5E3200F1E75D /* Intents.intentdefinition */; };
+		1431381E27EF5E3200F1E75D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1431381C27EF5E3200F1E75D /* Intents.intentdefinition */; };
+		1431382227EF6CD300F1E75D /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143137FD27EF350500F1E75D /* IntentHandler.swift */; };
+		1431382427EF6E3900F1E75D /* AppStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431382327EF6E3900F1E75D /* AppStats.swift */; };
+		1431382527EF6E3900F1E75D /* AppStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431382327EF6E3900F1E75D /* AppStats.swift */; };
+		1431382F27EF9C5C00F1E75D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431382E27EF9C5C00F1E75D /* Constants.swift */; };
+		1431383027EF9C5C00F1E75D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431382E27EF9C5C00F1E75D /* Constants.swift */; };
+		1431386927EFB00500F1E75D /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431386827EFB00500F1E75D /* Encodable+Dictionary.swift */; };
+		1431386A27EFB00500F1E75D /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431386827EFB00500F1E75D /* Encodable+Dictionary.swift */; };
+		143138A427F08B5900F1E75D /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143138A327F08B5900F1E75D /* PopupView.swift */; };
+		143138A927F0AF7500F1E75D /* View+isHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143138A827F0AF7500F1E75D /* View+isHidden.swift */; };
+		143138AB27F0B27D00F1E75D /* Application+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143138AA27F0B27D00F1E75D /* Application+Name.swift */; };
+		143138AD27F0B76200F1E75D /* AppOpeningGuardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143138AC27F0B76200F1E75D /* AppOpeningGuardService.swift */; };
+		143138AE27F0B79600F1E75D /* AppOpeningGuardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143138AC27F0B76200F1E75D /* AppOpeningGuardService.swift */; };
+		143138AF27F0B7F300F1E75D /* Application+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143138AA27F0B27D00F1E75D /* Application+Name.swift */; };
+		143138B127F0BCED00F1E75D /* BreathAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143138B027F0BCED00F1E75D /* BreathAnimationView.swift */; };
+		143138B827F10D9200F1E75D /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143138B727F10D9200F1E75D /* AppService.swift */; };
+		14754B2227F2EDF000EBE5E4 /* HapticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14754B2127F2EDF000EBE5E4 /* HapticsService.swift */; };
+		14754B2427F2EE8B00EBE5E4 /* AnimationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14754B2327F2EE8B00EBE5E4 /* AnimationState.swift */; };
+		1488F40E27FF663B007073D1 /* OpenAppIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488F40D27FF663B007073D1 /* OpenAppIntentHandler.swift */; };
+		1488F41027FF667D007073D1 /* CloseAppIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488F40F27FF667D007073D1 /* CloseAppIntentHandler.swift */; };
+		1488F41127FF6D09007073D1 /* OpenAppIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488F40D27FF663B007073D1 /* OpenAppIntentHandler.swift */; };
+		1488F41227FF6D0B007073D1 /* CloseAppIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488F40F27FF667D007073D1 /* CloseAppIntentHandler.swift */; };
+		1488F41527FF7E38007073D1 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143138B727F10D9200F1E75D /* AppService.swift */; };
+		1488F41627FF7E3E007073D1 /* StatsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143137F227EF321D00F1E75D /* StatsStorage.swift */; };
+		AB18E31728223F1B002127DD /* AppServiceTimeSpentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB18E31628223F1B002127DD /* AppServiceTimeSpentTests.swift */; };
+		AB2621DE28210F8400D70331 /* UserDefaults+resetDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2621DD28210F8400D70331 /* UserDefaults+resetDefaults.swift */; };
+		AB2621DF28210F8400D70331 /* UserDefaults+resetDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2621DD28210F8400D70331 /* UserDefaults+resetDefaults.swift */; };
+		AB2621E1282116DC00D70331 /* Dictionary+JSONDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2621E0282116DC00D70331 /* Dictionary+JSONDecode.swift */; };
+		AB2621E2282116DC00D70331 /* Dictionary+JSONDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2621E0282116DC00D70331 /* Dictionary+JSONDecode.swift */; };
+		ABC239D52820544100AC123C /* Double+abs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC239D42820544100AC123C /* Double+abs.swift */; };
+		ABC239D62820544100AC123C /* Double+abs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC239D42820544100AC123C /* Double+abs.swift */; };
+		ABC239D92820BD7C00AC123C /* AppServiceAddAttemptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC239D82820BD7C00AC123C /* AppServiceAddAttemptTests.swift */; };
+		ABC239DA2820BE0200AC123C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431382E27EF9C5C00F1E75D /* Constants.swift */; };
+		ABFBB140281C558B00515F39 /* Dictionary+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFBB13F281C558B00515F39 /* Dictionary+Data.swift */; };
+		ABFBB141281C558B00515F39 /* Dictionary+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFBB13F281C558B00515F39 /* Dictionary+Data.swift */; };
+		ABFBB143281C585500515F39 /* TimeInterval+SameDayAs+DateSince1970+DateString.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFBB142281C585500515F39 /* TimeInterval+SameDayAs+DateSince1970+DateString.swift */; };
+		ABFBB144281C585500515F39 /* TimeInterval+SameDayAs+DateSince1970+DateString.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFBB142281C585500515F39 /* TimeInterval+SameDayAs+DateSince1970+DateString.swift */; };
+		ABFBB146281C5A1300515F39 /* Date+SameDayAs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFBB145281C5A1300515F39 /* Date+SameDayAs.swift */; };
+		ABFBB147281C5A1300515F39 /* Date+SameDayAs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFBB145281C5A1300515F39 /* Date+SameDayAs.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		143137D027EF1CFF00F1E75D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 143137B727EF1CFE00F1E75D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 143137BE27EF1CFE00F1E75D;
+			remoteInfo = Miqi;
+		};
+		1431381127EF350500F1E75D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 143137B727EF1CFE00F1E75D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 143137F727EF350500F1E75D;
+			remoteInfo = MiqiShortcutIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1431381A27EF350500F1E75D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1431381327EF350500F1E75D /* MiqiShortcutIntent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		140DF2AB27F61E02005151EC /* Application+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+URL.swift"; sourceTree = "<group>"; };
+		1415D83127F86515008A4060 /* GaugeProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeProgressViewStyle.swift; sourceTree = "<group>"; };
+		143137BF27EF1CFE00F1E75D /* Miqi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miqi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		143137C227EF1CFE00F1E75D /* MiqiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiqiApp.swift; sourceTree = "<group>"; };
+		143137C427EF1CFE00F1E75D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		143137C627EF1CFF00F1E75D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		143137C927EF1CFF00F1E75D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		143137CF27EF1CFF00F1E75D /* MiqiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiqiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		143137EF27EF315D00F1E75D /* Miqi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Miqi.entitlements; sourceTree = "<group>"; };
+		143137F227EF321D00F1E75D /* StatsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsStorage.swift; sourceTree = "<group>"; };
+		143137F827EF350500F1E75D /* MiqiShortcutIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MiqiShortcutIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		143137FA27EF350500F1E75D /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		143137FD27EF350500F1E75D /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		143137FF27EF350500F1E75D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1431381C27EF5E3200F1E75D /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		1431382027EF5EB600F1E75D /* MiqiShortcutIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MiqiShortcutIntent.entitlements; sourceTree = "<group>"; };
+		1431382327EF6E3900F1E75D /* AppStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStats.swift; sourceTree = "<group>"; };
+		1431382A27EF7F9C00F1E75D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1431382E27EF9C5C00F1E75D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1431386827EFB00500F1E75D /* Encodable+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Dictionary.swift"; sourceTree = "<group>"; };
+		143138A327F08B5900F1E75D /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		143138A827F0AF7500F1E75D /* View+isHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+isHidden.swift"; sourceTree = "<group>"; };
+		143138AA27F0B27D00F1E75D /* Application+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+Name.swift"; sourceTree = "<group>"; };
+		143138AC27F0B76200F1E75D /* AppOpeningGuardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOpeningGuardService.swift; sourceTree = "<group>"; };
+		143138B027F0BCED00F1E75D /* BreathAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathAnimationView.swift; sourceTree = "<group>"; };
+		143138B727F10D9200F1E75D /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		14754B2127F2EDF000EBE5E4 /* HapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsService.swift; sourceTree = "<group>"; };
+		14754B2327F2EE8B00EBE5E4 /* AnimationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationState.swift; sourceTree = "<group>"; };
+		1488F40D27FF663B007073D1 /* OpenAppIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAppIntentHandler.swift; sourceTree = "<group>"; };
+		1488F40F27FF667D007073D1 /* CloseAppIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseAppIntentHandler.swift; sourceTree = "<group>"; };
+		AB18E31628223F1B002127DD /* AppServiceTimeSpentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServiceTimeSpentTests.swift; sourceTree = "<group>"; };
+		AB2621DD28210F8400D70331 /* UserDefaults+resetDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+resetDefaults.swift"; sourceTree = "<group>"; };
+		AB2621E0282116DC00D70331 /* Dictionary+JSONDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSONDecode.swift"; sourceTree = "<group>"; };
+		ABC239D42820544100AC123C /* Double+abs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+abs.swift"; sourceTree = "<group>"; };
+		ABC239D82820BD7C00AC123C /* AppServiceAddAttemptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServiceAddAttemptTests.swift; sourceTree = "<group>"; };
+		ABFBB13F281C558B00515F39 /* Dictionary+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Data.swift"; sourceTree = "<group>"; };
+		ABFBB142281C585500515F39 /* TimeInterval+SameDayAs+DateSince1970+DateString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+SameDayAs+DateSince1970+DateString.swift"; sourceTree = "<group>"; };
+		ABFBB145281C5A1300515F39 /* Date+SameDayAs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+SameDayAs.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		143137BC27EF1CFE00F1E75D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143137CC27EF1CFF00F1E75D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143137F527EF350500F1E75D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143137FB27EF350500F1E75D /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		143137B627EF1CFE00F1E75D = {
+			isa = PBXGroup;
+			children = (
+				1431381B27EF5E1200F1E75D /* Shared */,
+				143137C127EF1CFE00F1E75D /* Miqi */,
+				143137D227EF1CFF00F1E75D /* MiqiTests */,
+				143137FC27EF350500F1E75D /* MiqiShortcutIntent */,
+				143137F927EF350500F1E75D /* Frameworks */,
+				143137C027EF1CFE00F1E75D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		143137C027EF1CFE00F1E75D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				143137BF27EF1CFE00F1E75D /* Miqi.app */,
+				143137CF27EF1CFF00F1E75D /* MiqiTests.xctest */,
+				143137F827EF350500F1E75D /* MiqiShortcutIntent.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		143137C127EF1CFE00F1E75D /* Miqi */ = {
+			isa = PBXGroup;
+			children = (
+				ABC239D72820BBEE00AC123C /* Extensions */,
+				143138A227F08B3800F1E75D /* ViewLayer */,
+				143137F027EF31FF00F1E75D /* ServiceLayer */,
+				143137EF27EF315D00F1E75D /* Miqi.entitlements */,
+				143137C627EF1CFF00F1E75D /* Assets.xcassets */,
+				1431382A27EF7F9C00F1E75D /* Info.plist */,
+				143137C827EF1CFF00F1E75D /* Preview Content */,
+			);
+			path = Miqi;
+			sourceTree = "<group>";
+		};
+		143137C827EF1CFF00F1E75D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				143137C927EF1CFF00F1E75D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		143137D227EF1CFF00F1E75D /* MiqiTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABC239D82820BD7C00AC123C /* AppServiceAddAttemptTests.swift */,
+				AB18E31628223F1B002127DD /* AppServiceTimeSpentTests.swift */,
+			);
+			path = MiqiTests;
+			sourceTree = "<group>";
+		};
+		143137F027EF31FF00F1E75D /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				14754B2127F2EDF000EBE5E4 /* HapticsService.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		143137F927EF350500F1E75D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				143137FA27EF350500F1E75D /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		143137FC27EF350500F1E75D /* MiqiShortcutIntent */ = {
+			isa = PBXGroup;
+			children = (
+				143137FF27EF350500F1E75D /* Info.plist */,
+				1431382027EF5EB600F1E75D /* MiqiShortcutIntent.entitlements */,
+				143137FD27EF350500F1E75D /* IntentHandler.swift */,
+				1488F40D27FF663B007073D1 /* OpenAppIntentHandler.swift */,
+				1488F40F27FF667D007073D1 /* CloseAppIntentHandler.swift */,
+			);
+			path = MiqiShortcutIntent;
+			sourceTree = "<group>";
+		};
+		1431381B27EF5E1200F1E75D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1488F41928002890007073D1 /* Extensions */,
+				1488F41828002873007073D1 /* Model */,
+				1488F41728002834007073D1 /* ServiceLayer */,
+				1431381C27EF5E3200F1E75D /* Intents.intentdefinition */,
+				1431382E27EF9C5C00F1E75D /* Constants.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		143138A227F08B3800F1E75D /* ViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				143137C227EF1CFE00F1E75D /* MiqiApp.swift */,
+				143137C427EF1CFE00F1E75D /* ContentView.swift */,
+				143138A327F08B5900F1E75D /* PopupView.swift */,
+				143138B027F0BCED00F1E75D /* BreathAnimationView.swift */,
+				14754B2327F2EE8B00EBE5E4 /* AnimationState.swift */,
+				1415D83127F86515008A4060 /* GaugeProgressViewStyle.swift */,
+			);
+			path = ViewLayer;
+			sourceTree = "<group>";
+		};
+		1488F41728002834007073D1 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				143137F227EF321D00F1E75D /* StatsStorage.swift */,
+				143138B727F10D9200F1E75D /* AppService.swift */,
+				143138AC27F0B76200F1E75D /* AppOpeningGuardService.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		1488F41828002873007073D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1431382327EF6E3900F1E75D /* AppStats.swift */,
+				143138AA27F0B27D00F1E75D /* Application+Name.swift */,
+				140DF2AB27F61E02005151EC /* Application+URL.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1488F41928002890007073D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ABFBB145281C5A1300515F39 /* Date+SameDayAs.swift */,
+				ABFBB13F281C558B00515F39 /* Dictionary+Data.swift */,
+				AB2621E0282116DC00D70331 /* Dictionary+JSONDecode.swift */,
+				ABC239D42820544100AC123C /* Double+abs.swift */,
+				1431386827EFB00500F1E75D /* Encodable+Dictionary.swift */,
+				ABFBB142281C585500515F39 /* TimeInterval+SameDayAs+DateSince1970+DateString.swift */,
+				AB2621DD28210F8400D70331 /* UserDefaults+resetDefaults.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ABC239D72820BBEE00AC123C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				143138A827F0AF7500F1E75D /* View+isHidden.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		143137BE27EF1CFE00F1E75D /* Miqi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 143137E327EF1CFF00F1E75D /* Build configuration list for PBXNativeTarget "Miqi" */;
+			buildPhases = (
+				143137BB27EF1CFE00F1E75D /* Sources */,
+				143137BC27EF1CFE00F1E75D /* Frameworks */,
+				143137BD27EF1CFE00F1E75D /* Resources */,
+				1431381A27EF350500F1E75D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1431381227EF350500F1E75D /* PBXTargetDependency */,
+			);
+			name = Miqi;
+			productName = Miqi;
+			productReference = 143137BF27EF1CFE00F1E75D /* Miqi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		143137CE27EF1CFF00F1E75D /* MiqiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 143137E627EF1CFF00F1E75D /* Build configuration list for PBXNativeTarget "MiqiTests" */;
+			buildPhases = (
+				143137CB27EF1CFF00F1E75D /* Sources */,
+				143137CC27EF1CFF00F1E75D /* Frameworks */,
+				143137CD27EF1CFF00F1E75D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				143137D127EF1CFF00F1E75D /* PBXTargetDependency */,
+			);
+			name = MiqiTests;
+			productName = MiqiTests;
+			productReference = 143137CF27EF1CFF00F1E75D /* MiqiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		143137F727EF350500F1E75D /* MiqiShortcutIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1431381727EF350500F1E75D /* Build configuration list for PBXNativeTarget "MiqiShortcutIntent" */;
+			buildPhases = (
+				143137F427EF350500F1E75D /* Sources */,
+				143137F527EF350500F1E75D /* Frameworks */,
+				143137F627EF350500F1E75D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiqiShortcutIntent;
+			productName = MiqiShortcutIntent;
+			productReference = 143137F827EF350500F1E75D /* MiqiShortcutIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		143137B727EF1CFE00F1E75D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					143137BE27EF1CFE00F1E75D = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					143137CE27EF1CFF00F1E75D = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 143137BE27EF1CFE00F1E75D;
+					};
+					143137F727EF350500F1E75D = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 143137BA27EF1CFE00F1E75D /* Build configuration list for PBXProject "Miqi" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 143137B627EF1CFE00F1E75D;
+			productRefGroup = 143137C027EF1CFE00F1E75D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				143137BE27EF1CFE00F1E75D /* Miqi */,
+				143137CE27EF1CFF00F1E75D /* MiqiTests */,
+				143137F727EF350500F1E75D /* MiqiShortcutIntent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		143137BD27EF1CFE00F1E75D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143137CA27EF1CFF00F1E75D /* Preview Assets.xcassets in Resources */,
+				143137C727EF1CFF00F1E75D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143137CD27EF1CFF00F1E75D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143137F627EF350500F1E75D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		143137BB27EF1CFE00F1E75D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1488F41127FF6D09007073D1 /* OpenAppIntentHandler.swift in Sources */,
+				1431382427EF6E3900F1E75D /* AppStats.swift in Sources */,
+				143137F327EF321D00F1E75D /* StatsStorage.swift in Sources */,
+				ABFBB140281C558B00515F39 /* Dictionary+Data.swift in Sources */,
+				143138A427F08B5900F1E75D /* PopupView.swift in Sources */,
+				ABC239D52820544100AC123C /* Double+abs.swift in Sources */,
+				AB2621DE28210F8400D70331 /* UserDefaults+resetDefaults.swift in Sources */,
+				ABFBB143281C585500515F39 /* TimeInterval+SameDayAs+DateSince1970+DateString.swift in Sources */,
+				143138A927F0AF7500F1E75D /* View+isHidden.swift in Sources */,
+				143138AD27F0B76200F1E75D /* AppOpeningGuardService.swift in Sources */,
+				143138B827F10D9200F1E75D /* AppService.swift in Sources */,
+				1431382227EF6CD300F1E75D /* IntentHandler.swift in Sources */,
+				1431386927EFB00500F1E75D /* Encodable+Dictionary.swift in Sources */,
+				143138B127F0BCED00F1E75D /* BreathAnimationView.swift in Sources */,
+				143137C527EF1CFE00F1E75D /* ContentView.swift in Sources */,
+				143138AB27F0B27D00F1E75D /* Application+Name.swift in Sources */,
+				14754B2227F2EDF000EBE5E4 /* HapticsService.swift in Sources */,
+				AB2621E1282116DC00D70331 /* Dictionary+JSONDecode.swift in Sources */,
+				ABFBB146281C5A1300515F39 /* Date+SameDayAs.swift in Sources */,
+				1488F41227FF6D0B007073D1 /* CloseAppIntentHandler.swift in Sources */,
+				1431382F27EF9C5C00F1E75D /* Constants.swift in Sources */,
+				1431381D27EF5E3200F1E75D /* Intents.intentdefinition in Sources */,
+				143137C327EF1CFE00F1E75D /* MiqiApp.swift in Sources */,
+				140DF2AC27F61E02005151EC /* Application+URL.swift in Sources */,
+				1415D83227F86515008A4060 /* GaugeProgressViewStyle.swift in Sources */,
+				14754B2427F2EE8B00EBE5E4 /* AnimationState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143137CB27EF1CFF00F1E75D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC239D92820BD7C00AC123C /* AppServiceAddAttemptTests.swift in Sources */,
+				ABC239DA2820BE0200AC123C /* Constants.swift in Sources */,
+				AB18E31728223F1B002127DD /* AppServiceTimeSpentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143137F427EF350500F1E75D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABFBB144281C585500515F39 /* TimeInterval+SameDayAs+DateSince1970+DateString.swift in Sources */,
+				ABFBB147281C5A1300515F39 /* Date+SameDayAs.swift in Sources */,
+				143138AF27F0B7F300F1E75D /* Application+Name.swift in Sources */,
+				1488F41527FF7E38007073D1 /* AppService.swift in Sources */,
+				143138AE27F0B79600F1E75D /* AppOpeningGuardService.swift in Sources */,
+				140DF2AD27F61E02005151EC /* Application+URL.swift in Sources */,
+				1431382527EF6E3900F1E75D /* AppStats.swift in Sources */,
+				ABC239D62820544100AC123C /* Double+abs.swift in Sources */,
+				1431381E27EF5E3200F1E75D /* Intents.intentdefinition in Sources */,
+				ABFBB141281C558B00515F39 /* Dictionary+Data.swift in Sources */,
+				AB2621DF28210F8400D70331 /* UserDefaults+resetDefaults.swift in Sources */,
+				1488F41627FF7E3E007073D1 /* StatsStorage.swift in Sources */,
+				1488F41027FF667D007073D1 /* CloseAppIntentHandler.swift in Sources */,
+				143137FE27EF350500F1E75D /* IntentHandler.swift in Sources */,
+				1431386A27EFB00500F1E75D /* Encodable+Dictionary.swift in Sources */,
+				AB2621E2282116DC00D70331 /* Dictionary+JSONDecode.swift in Sources */,
+				1431383027EF9C5C00F1E75D /* Constants.swift in Sources */,
+				1488F40E27FF663B007073D1 /* OpenAppIntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		143137D127EF1CFF00F1E75D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 143137BE27EF1CFE00F1E75D /* Miqi */;
+			targetProxy = 143137D027EF1CFF00F1E75D /* PBXContainerItemProxy */;
+		};
+		1431381227EF350500F1E75D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 143137F727EF350500F1E75D /* MiqiShortcutIntent */;
+			targetProxy = 1431381127EF350500F1E75D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		143137E127EF1CFF00F1E75D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		143137E227EF1CFF00F1E75D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		143137E427EF1CFF00F1E75D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Miqi/Miqi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_ASSET_PATHS = "\"Miqi/Preview Content\"";
+				DEVELOPMENT_TEAM = R5T67M7A54;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Miqi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intellbits.Miqi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		143137E527EF1CFF00F1E75D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Miqi/Miqi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_ASSET_PATHS = "\"Miqi/Preview Content\"";
+				DEVELOPMENT_TEAM = R5T67M7A54;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Miqi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intellbits.Miqi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		143137E727EF1CFF00F1E75D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5T67M7A54;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miqi.MiqiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Miqi.app/Miqi";
+			};
+			name = Debug;
+		};
+		143137E827EF1CFF00F1E75D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5T67M7A54;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miqi.MiqiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Miqi.app/Miqi";
+			};
+			name = Release;
+		};
+		1431381827EF350500F1E75D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MiqiShortcutIntent/MiqiShortcutIntent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = R5T67M7A54;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MiqiShortcutIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MiqiShortcutIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intellbits.Miqi.MiqiShortcutIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1431381927EF350500F1E75D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MiqiShortcutIntent/MiqiShortcutIntent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = R5T67M7A54;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MiqiShortcutIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MiqiShortcutIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.intellbits.Miqi.MiqiShortcutIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		143137BA27EF1CFE00F1E75D /* Build configuration list for PBXProject "Miqi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143137E127EF1CFF00F1E75D /* Debug */,
+				143137E227EF1CFF00F1E75D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		143137E327EF1CFF00F1E75D /* Build configuration list for PBXNativeTarget "Miqi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143137E427EF1CFF00F1E75D /* Debug */,
+				143137E527EF1CFF00F1E75D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		143137E627EF1CFF00F1E75D /* Build configuration list for PBXNativeTarget "MiqiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143137E727EF1CFF00F1E75D /* Debug */,
+				143137E827EF1CFF00F1E75D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1431381727EF350500F1E75D /* Build configuration list for PBXNativeTarget "MiqiShortcutIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1431381827EF350500F1E75D /* Debug */,
+				1431381927EF350500F1E75D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 143137B727EF1CFE00F1E75D /* Project object */;
+}
